@@ -58,7 +58,10 @@ return packer.startup(function(use)
 	use "nvim-lua/plenary.nvim"
 	use "nvim-lua/popup.nvim"
 	-- END OF PLUGIN REPOS --
-
+	--
+	-- -- COLORSCHEMES AND THEMES -- --
+	-- -- END OF COLORSCHEMES AND THEMES -- --
+	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --
 	if PACKER_BOOTSTRAP then
