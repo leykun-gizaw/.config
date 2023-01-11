@@ -81,6 +81,10 @@ return packer.startup(function(use)
 	use "kyazdani42/nvim-tree.lua"			-- Tree Plugin
 	-- -- END OF FILE EXPLORER -- --
 	--
+	-- -- SYNTAX HIGHLIGHTING PLUGIN -- --
+	use "nvim-treesitter/nvim-treesitter"		-- Treesitter wrapper for neovim
+	-- -- END OF SYNTAX HIGHLIGHTING PLUGIN -- --
+	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --
 	if PACKER_BOOTSTRAP then
