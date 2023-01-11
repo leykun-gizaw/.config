@@ -61,6 +61,7 @@ return packer.startup(function(use)
 	--
 	-- -- COLORSCHEMES AND THEMES -- --
 	use "lunarvim/colorschemes"
+	use "shatur/neovim-ayu"
 	-- -- END OF COLORSCHEMES AND THEMES -- --
 	--
 	-- -- COMPLETION PLUGINS -- --
@@ -84,6 +85,10 @@ return packer.startup(function(use)
 	-- -- SYNTAX HIGHLIGHTING PLUGIN -- --
 	use "nvim-treesitter/nvim-treesitter"		-- Treesitter wrapper for neovim
 	-- -- END OF SYNTAX HIGHLIGHTING PLUGIN -- --
+	--
+	-- -- TERMINAL PLUGIN -- --
+	use "akinsho/toggleterm.nvim"			-- ToggleTerm terminal plugin
+	-- -- END OF TERMINAL PLUGIN -- --
 	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --
