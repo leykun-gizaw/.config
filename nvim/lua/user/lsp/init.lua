@@ -27,3 +27,19 @@ end
 --
 -------------------------------------------------------------------------------------
 --
+-- Diagnostics configs
+local configs = {
+	virtual_text = false,
+	float = {
+		focusable = false,
+	},
+}
+-- Attach configs to diagnostic config
+vim.diagnostic.config(configs)
+-- Solve border issue on hover
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+	border = "rounded",
+})
+--
+-------------------------------------------------------------------------------------
+--
