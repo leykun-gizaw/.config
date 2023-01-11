@@ -60,6 +60,7 @@ return packer.startup(function(use)
 	-- END OF PLUGIN REPOS --
 	--
 	-- -- COLORSCHEMES AND THEMES -- --
+	use "lunarvim/colorschemes"
 	-- -- END OF COLORSCHEMES AND THEMES -- --
 	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
