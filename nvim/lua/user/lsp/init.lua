@@ -43,3 +43,29 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 --
 -------------------------------------------------------------------------------------
 --
+-- On attach function that sets up key mappings
+local on_attach = function(client, bufnr)
+	--
+	-- Wrapper function for the exposed api
+	--
+	local function buf_set_keymap(...)
+		vim.api.nvim_buf_set_keymap(bufnr, ...)
+	end
+	-- Options to pass for each keymap
+	local opts = { noremap = true, silent = true }
+	-- Keymaps
+	buf_set_keymap("n", "gD", "<cmd> lua vim.lsp.buf.declaration()<CR>", opts)
+	buf_set_keymap("n", "gd", "<cmd> lua vim.lsp.buf.definition()<CR>", opts)
+	buf_set_keymap("n", "K", "<cmd> lua vim.lsp.buf.hover()<CR>", opts)
+	buf_set_keymap("n", "gi", "<cmd> lua vim.lsp.buf.implementation()<CR>", opts)
+	buf_set_keymap(
+		"n",
+		"gl",
+		'<cmd> lua vim.diagnostic.open_float({ border = "rounded" })<CR>', opts
+	)
+end
+-- Extendable capabilities to setup each server
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+--
+-------------------------------------------------------------------------------------
+--
