@@ -63,6 +63,11 @@ return packer.startup(function(use)
 	use "lunarvim/colorschemes"
 	-- -- END OF COLORSCHEMES AND THEMES -- --
 	--
+	-- -- FILE EXPLORER -- --
+	use "kyazdani42/nvim-web-devicons"		-- Icons for NvimTree
+	use "kyazdani42/nvim-tree.lua"			-- Tree Plugin
+	-- -- END OF FILE EXPLORER -- --
+	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --
 	if PACKER_BOOTSTRAP then
