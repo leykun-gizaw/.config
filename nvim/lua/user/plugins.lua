@@ -70,6 +70,7 @@ return packer.startup(function(use)
 	use "hrsh7th/cmp-path"				-- Path completions
 	use "hrsh7th/cmp-cmdline"			-- CMDline completions
 	use "saadparwaiz1/cmp_luasnip"			-- Snippet completions
+	use "hrsh7th/cmp-nvim-lsp"			-- Source for neovim's built-in LSP
 	-- -- END OF COMPLETION PLUGINS -- --
 	--
 	-- -- SNIPPETS -- --
@@ -89,6 +90,10 @@ return packer.startup(function(use)
 	-- -- TERMINAL PLUGIN -- --
 	use "akinsho/toggleterm.nvim"			-- ToggleTerm terminal plugin
 	-- -- END OF TERMINAL PLUGIN -- --
+	--
+	-- -- LSP PLUGINS -- --
+	use "neovim/nvim-lspconfig"			-- Configs for Nvim LSP client
+	-- -- END OF LSP PLUGINS -- --
 	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --
