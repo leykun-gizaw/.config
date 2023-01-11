@@ -63,6 +63,19 @@ return packer.startup(function(use)
 	use "lunarvim/colorschemes"
 	-- -- END OF COLORSCHEMES AND THEMES -- --
 	--
+	-- -- COMPLETION PLUGINS -- --
+	use "hrsh7th/nvim-cmp"				-- THE Completion Plugin
+	use "hrsh7th/cmp-buffer"			-- Buffer completions
+	use "hrsh7th/cmp-path"				-- Path completions
+	use "hrsh7th/cmp-cmdline"			-- CMDline completions
+	use "saadparwaiz1/cmp_luasnip"			-- Snippet completions
+	-- -- END OF COMPLETION PLUGINS -- --
+	--
+	-- -- SNIPPETS -- --
+	use "L3MON4D3/LuaSnip"				-- Snippet engine
+	use "rafamadriz/friendly-snippets"		-- Bunch of snippets to use
+	-- -- END OF SNIPPETS -- --
+	--
 	-- -- FILE EXPLORER -- --
 	use "kyazdani42/nvim-web-devicons"		-- Icons for NvimTree
 	use "kyazdani42/nvim-tree.lua"			-- Tree Plugin
