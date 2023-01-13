@@ -11,6 +11,9 @@ end
 trs_config.setup {
 	ensure_installed = { "c", "lua", "help", "python" },
 	highlight = {
-		enable = true
-	}
+		enable = true,
+	},
+	indent = {
+		enable = true,
+	},
 }
