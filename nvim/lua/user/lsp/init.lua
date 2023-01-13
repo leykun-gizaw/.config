@@ -6,7 +6,7 @@ if not lspconfig_status_ok then
 	return
 end
 
-local cmp_lsp_status_ok, lspconfig = pcall(require, "cmp_nvim_lsp")
+local cmp_lsp_status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not cmp_lsp_status_ok then
 	return
 end
@@ -71,3 +71,11 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 --
 -------------------------------------------------------------------------------------
 --
+local servers = { "pyright" }
+-- Setup each server with custom `on_attach` and `capabilities` functions
+for _, ls in ipairs(servers) do
+	lspconfig[ls].setup {
+		on_attach = on_attach,
+		capabilities = cmp_nvim_lsp.default_capabilities(capabilities),
+	}
+end
