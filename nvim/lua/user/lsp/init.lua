@@ -71,7 +71,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 --
 -------------------------------------------------------------------------------------
 --
-local servers = { "pyright" }
+local servers = { "pyright", "clangd" }
 -- Setup each server with custom `on_attach` and `capabilities` functions
 for _, ls in ipairs(servers) do
 	lspconfig[ls].setup {
