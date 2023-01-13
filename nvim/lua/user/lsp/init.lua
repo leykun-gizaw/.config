@@ -10,6 +10,8 @@ local cmp_lsp_status_ok, lspconfig = pcall(require, "cmp_nvim_lsp")
 if not cmp_lsp_status_ok then
 	return
 end
+
+require("user.lsp.mason")
 --
 -------------------------------------------------------------------------------------
 --
