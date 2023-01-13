@@ -96,6 +96,10 @@ return packer.startup(function(use)
 	use "williamboman/mason.nvim"			-- Package manager for Language Servers
 	-- -- END OF LSP PLUGINS -- --
 	--
+	-- -- AUTOPAIR PLUGIN -- --
+	use "windwp/nvim-autopairs"			-- Automatic pair creating plugin
+	-- -- END OF AUTOPAIR PLUGIN -- --
+	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --
 	if PACKER_BOOTSTRAP then
