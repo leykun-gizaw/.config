@@ -93,6 +93,7 @@ return packer.startup(function(use)
 	--
 	-- -- LSP PLUGINS -- --
 	use "neovim/nvim-lspconfig"			-- Configs for Nvim LSP client
+	use "williamboman/mason.nvim"			-- Package manager for Language Servers
 	-- -- END OF LSP PLUGINS -- --
 	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
