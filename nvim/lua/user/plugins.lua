@@ -100,6 +100,10 @@ return packer.startup(function(use)
 	use "windwp/nvim-autopairs"			-- Automatic pair creating plugin
 	-- -- END OF AUTOPAIR PLUGIN -- --
 	--
+	-- -- GIT PLUGINS -- --
+	use "lewis6991/gitsigns.nvim"			-- Fast git decorating plugin
+	-- -- END OF GIT PLUGINS -- --
+	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --
 	if PACKER_BOOTSTRAP then
