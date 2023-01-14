@@ -104,6 +104,10 @@ return packer.startup(function(use)
 	use "lewis6991/gitsigns.nvim"			-- Fast git decorating plugin
 	-- -- END OF GIT PLUGINS -- --
 	--
+	-- -- STATUSLINE PLUGINS -- --
+	use 'nvim-lualine/lualine.nvim'
+	-- -- END OF STATUSLINE PLUGINS -- --
+	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --
 	if PACKER_BOOTSTRAP then
