@@ -3,4 +3,15 @@ if not buf_status then
 	return
 end
 
-cokeline.setup()
+cokeline.setup({
+	sidebar = {
+		filetype = 'NvimTree',
+		components = {
+			{
+				text = '  NvimTree',
+    		  	  	fg = "orange",
+    		  	  	style = 'bold',
+    		  	},
+    		}
+	},
+})
