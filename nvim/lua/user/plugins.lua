@@ -109,6 +109,10 @@ return packer.startup(function(use)
 	use "noib3/nvim-cokeline"			-- Extensive bufferline plugin
 	-- -- END OF STATUSLINE & BUFFERLINE PLUGINS -- --
 	--
+	-- -- INDENT GUIDES PLUGIN -- --
+	use "lukas-reineke/indent-blankline.nvim"	-- Guides plugin
+	-- -- END OF INDENT GUIDES PLUGIN -- --
+	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --
 	if PACKER_BOOTSTRAP then
