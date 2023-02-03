@@ -9,7 +9,7 @@ if not config_status then
 end
 
 trs_config.setup {
-	ensure_installed = { "c", "lua", "help", "python" },
+	ensure_installed = { "c", "lua", "help", "python", "tsx" },
 	highlight = {
 		enable = true,
 	},
