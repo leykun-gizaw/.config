@@ -9,9 +9,9 @@ cokeline.setup({
 		components = {
 			{
 				text = '  NvimTree',
-    		  	  	fg = "orange",
-    		  	  	style = 'bold',
-    		  	},
-    		}
+				fg = "black",
+				style = 'bold',
+			},
+		}
 	},
 })
