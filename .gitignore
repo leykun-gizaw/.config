@@ -2,4 +2,5 @@
 !.gitignore
 !nvim
 !README.md
+!tmux
 nvim/plugin
