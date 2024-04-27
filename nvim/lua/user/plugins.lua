@@ -61,7 +61,8 @@ return packer.startup(function(use)
 	--
 	-- -- COLORSCHEMES AND THEMES -- --
 	use "lunarvim/colorschemes"
-	use "shatur/neovim-ayu"
+	use "loctvl842/monokai-pro.nvim"
+	-- use "shatur/neovim-ayu"
 	-- -- END OF COLORSCHEMES AND THEMES -- --
 	--
 	-- -- COMPLETION PLUGINS -- --
