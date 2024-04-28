@@ -114,6 +114,19 @@ return packer.startup(function(use)
 	use "lukas-reineke/indent-blankline.nvim"	-- Guides plugin
 	-- -- END OF INDENT GUIDES PLUGIN -- --
 	--
+	-- -- RIPGREP PLUGIN -- --
+	use "BurntSushi/ripgrep"			-- Suggested for telescope
+	-- -- END OF RIPGREP PLUGIN -- --
+	--
+	-- -- TELESCOPE PLUGIN -- --
+	use {							-- Fuzzy finder plugin
+	  'nvim-telescope/telescope.nvim', tag = '0.1.6',	--
+	  requires = {						--
+		  {'nvim-lua/plenary.nvim'}			--
+	  }							--
+	}							--
+	-- -- END OF TELESCOPE PLUGIN -- --
+	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --
 	if PACKER_BOOTSTRAP then
