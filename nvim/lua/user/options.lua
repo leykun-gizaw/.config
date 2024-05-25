@@ -10,10 +10,13 @@ local global_options = {
 	incsearch = true,			-- Show increamental highlight for searches
 	showmode = false, 			-- Stop showing current buffer mode (e.g. -- INSERT -- etc...)
 	cursorline = true,			-- Highlight current line where cursor is
-	numberwidth = 2,			-- Set number column width to 2 { default: 4 }
+	numberwidth = 1,			-- Set number column width to 2 { default: 4 }
 	signcolumn = "yes",			-- Always show signcolumn before line numbers
 	scrolloff = 8,				-- Cursor position from top or bottom when scrolling
-	sidescrolloff = 8,
+	sidescrolloff = 8,			-- Set scroll top and bottom offset
+	cmdheight = 0,				-- Remove cmd height (if finecmdline is installed)
+	termguicolors = true,
+	background = "dark"
 }
 --
 --

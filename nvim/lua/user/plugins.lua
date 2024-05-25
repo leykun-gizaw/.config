@@ -62,6 +62,7 @@ return packer.startup(function(use)
 	-- -- COLORSCHEMES AND THEMES -- --
 	use "lunarvim/colorschemes"
 	use "loctvl842/monokai-pro.nvim"
+	use "Shatur/neovim-ayu"
 	-- use "shatur/neovim-ayu"
 	-- -- END OF COLORSCHEMES AND THEMES -- --
 	--
@@ -126,6 +127,20 @@ return packer.startup(function(use)
 	  }							--
 	}							--
 	-- -- END OF TELESCOPE PLUGIN -- --
+	--
+	-- -- FINE CMDLINE -- --
+	use {
+	  'VonHeikemen/fine-cmdline.nvim',
+	  requires = {
+		{'MunifTanjim/nui.nvim'}
+	    }
+	  }
+	--
+	-- -- END OF FINE CMDLINE -- --
+	--
+	-- -- CODE FORMATTER -- --
+	use "stevearc/conform.nvim"
+	-- -- END OF CODE FORMATTER -- --
 	--
 	-- AUTO SETUP OF CONFIG AFTER PACKER CLONE --
 	-- (always keep at the end after plugins) --

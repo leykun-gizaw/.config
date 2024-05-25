@@ -31,7 +31,7 @@ end
 --
 -- Diagnostics configs
 local configs = {
-	virtual_text = false,
+	virtual_text = true,
 	float = {
 		focusable = false,
 	},

@@ -25,6 +25,7 @@ keymap("n", "<S-n>", ":bn<CR>", opts)
 keymap("n", "<S-p>", ":bp<CR>", opts)
 -- keymap("n", "<leader>e", ":Lex 25<CR>", opts) -- If NvimTree doesn't exist
 keymap("n", "<leader>e", ":NvimTreeToggle <CR>", opts)
+keymap("n", ":", "<cmd>FineCmdline<CR>", opts)
 --
 -- End OF NORMAL MODE --
 --
