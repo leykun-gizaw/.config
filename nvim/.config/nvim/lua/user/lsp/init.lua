@@ -24,7 +24,7 @@ local signs = {
 }
 -- Assign each sign to corresponding diagnostics
 for _, sign in ipairs(signs) do
-	vim.fn.sign_define(sign.name,{ texthl = sign.name, text = sign.text, numhl="" })
+	vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
 end
 --
 -------------------------------------------------------------------------------------
@@ -60,11 +60,7 @@ local on_attach = function(client, bufnr)
 	buf_set_keymap("n", "gd", "<cmd> lua vim.lsp.buf.definition()<CR>", opts)
 	buf_set_keymap("n", "K", "<cmd> lua vim.lsp.buf.hover()<CR>", opts)
 	buf_set_keymap("n", "gi", "<cmd> lua vim.lsp.buf.implementation()<CR>", opts)
-	buf_set_keymap(
-		"n",
-		"gl",
-		'<cmd> lua vim.diagnostic.open_float({ border = "rounded" })<CR>', opts
-	)
+	buf_set_keymap("n", "gl", '<cmd> lua vim.diagnostic.open_float({ border = "rounded" })<CR>', opts)
 end
 -- Extendable capabilities to setup each server
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -74,8 +70,8 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 local servers = { "pyright", "clangd", "tsserver" }
 -- Setup each server with custom `on_attach` and `capabilities` functions
 for _, ls in ipairs(servers) do
-	lspconfig[ls].setup {
+	lspconfig[ls].setup({
 		on_attach = on_attach,
 		capabilities = cmp_nvim_lsp.default_capabilities(capabilities),
-	}
+	})
 end

@@ -4,12 +4,12 @@ if not conform_status then
 	return
 end
 
-conform.setup ({
+conform.setup({
 	formatters_by_ft = {
-		python = { "black" }
+		python = { "black" },
 	},
 	format_on_save = {
 		timeout_ms = 1000,
-		lsp_fallback = true
+		lsp_fallback = true,
 	},
 })

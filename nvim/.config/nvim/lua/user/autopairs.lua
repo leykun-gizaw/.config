@@ -4,4 +4,4 @@ if not autopair_status then
 	return
 end
 
-autopair.setup {}
+autopair.setup({})

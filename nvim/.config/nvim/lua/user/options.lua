@@ -4,31 +4,32 @@
 --
 -- Global vim options
 local global_options = {
-	mouse = 'a',				-- Allow the mouse to be used in neovim
-	number = true,				-- Show line number
-	textwidth = 79,				-- Set column count to 79 characters
-	incsearch = true,			-- Show increamental highlight for searches
-	showmode = false, 			-- Stop showing current buffer mode (e.g. -- INSERT -- etc...)
-	cursorline = true,			-- Highlight current line where cursor is
-	numberwidth = 1,			-- Set number column width to 2 { default: 4 }
-	signcolumn = "yes",			-- Always show signcolumn before line numbers
-	scrolloff = 8,				-- Cursor position from top or bottom when scrolling
-	sidescrolloff = 8,			-- Set scroll top and bottom offset
-	cmdheight = 0,				-- Remove cmd height (if finecmdline is installed)
+	mouse = "a", -- Allow the mouse to be used in neovim
+	number = true, -- Show line number
+	textwidth = 79, -- Set column count to 79 characters
+	incsearch = true, -- Show increamental highlight for searches
+	showmode = false, -- Stop showing current buffer mode (e.g. -- INSERT -- etc...)
+	cursorline = true, -- Highlight current line where cursor is
+	numberwidth = 1, -- Set number column width to 2 { default: 4 }
+	signcolumn = "yes", -- Always show signcolumn before line numbers
+	scrolloff = 8, -- Cursor position from top or bottom when scrolling
+	sidescrolloff = 8, -- Set scroll top and bottom offset
+	cmdheight = 0, -- Remove cmd height (if finecmdline is installed)
 	termguicolors = true,
-	background = "dark"
+	background = "dark",
+	clipboard = unnamedplus,
 }
 --
 --
 -- Global vim options
 local buffer_options = {
-	cindent = true,				-- Smart indentation for C source code files
+	cindent = true, -- Smart indentation for C source code files
 }
 --
 --
 -- Window vim options
 local window_options = {
-	wrap = false,				-- Display lines as one long line
+	wrap = false, -- Display lines as one long line
 }
 --
 -----------------------------------------------

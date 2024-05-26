@@ -8,9 +8,9 @@ if not config_status then
 	return
 end
 
-trs_config.setup {
+trs_config.setup({
 	ensure_installed = { "c", "lua", "python", "tsx" },
 	highlight = {
 		enable = true,
 	},
-}
+})

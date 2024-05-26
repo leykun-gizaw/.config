@@ -5,13 +5,13 @@ end
 
 cokeline.setup({
 	sidebar = {
-		filetype = 'NvimTree',
+		filetype = "NvimTree",
 		components = {
 			{
-				text = '  NvimTree',
+				text = "  NvimTree",
 				fg = "black",
-				style = 'bold',
+				style = "bold",
 			},
-		}
+		},
 	},
 })
