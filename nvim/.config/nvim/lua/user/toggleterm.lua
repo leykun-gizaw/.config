@@ -4,8 +4,8 @@ if not status then
 end
 
 toggleterm.setup({
-	size = 10,
-	direction = "float",
+	size = 15,
+	direction = "horizontal",
 	open_mapping = [[<C-\>]],
 })
 function _G.set_terminal_keymaps()

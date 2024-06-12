@@ -31,7 +31,7 @@ end
 --
 -- Diagnostics configs
 local configs = {
-	virtual_text = true,
+	virtual_text = false,
 	float = {
 		focusable = false,
 	},
@@ -60,7 +60,7 @@ local on_attach = function(client, bufnr)
 	buf_set_keymap("n", "gd", "<cmd> lua vim.lsp.buf.definition()<CR>", opts)
 	buf_set_keymap("n", "K", "<cmd> lua vim.lsp.buf.hover()<CR>", opts)
 	buf_set_keymap("n", "gi", "<cmd> lua vim.lsp.buf.implementation()<CR>", opts)
-	buf_set_keymap("n", "gl", '<cmd> lua vim.diagnostic.open_float({ border = "rounded" })<CR>', opts)
+	buf_set_keymap("n", "gh", '<cmd> lua vim.diagnostic.open_float({ border = "rounded" })<CR>', opts)
 end
 -- Extendable capabilities to setup each server
 local capabilities = vim.lsp.protocol.make_client_capabilities()

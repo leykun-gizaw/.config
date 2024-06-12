@@ -1,7 +1,2 @@
-/*
-!.gitignore
-!nvim
-!README.md
-!tmux
-nvim/plugin
-tmux/plugins
+nvim/.config/nvim/plugin/
+tmux/.config/tmux/plugins/
